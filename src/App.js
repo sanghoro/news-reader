@@ -6,7 +6,6 @@ import Details from './details/Details';
 
 function App() {
   const [articles, setArticles] = useState([])
-  const [currentArticle, setCurrentArticle] = useState(null)
 
   useEffect(()=> {
     fetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=4d20c82c3c37412ea4e03c58d5f5516c')
@@ -17,15 +16,15 @@ function App() {
     })
   }, [])
 
-  
+
   return (
     <Router>
-      <Routes>
-          <Route path="/" element={<Mainpage articles={articles}/>}/>
-          <Route path="/details/:articleId" element={<Details articles={articles} />} viewDetails={(article) => setCurrentArticle(article)}/>
-      </Routes>
+        <Routes>
+            <Route path="/" element={<Mainpage articles={articles} />} />
+            <Route path="/details/:index" element={<Details articles={articles} />} />
+        </Routes>
     </Router>
-  );
+);
 }
 
 export default App;

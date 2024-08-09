@@ -24,9 +24,10 @@
 
 .card {
     padding: 20px;
-    background: rgb(30, 30, 30);
+    background: rgb(131, 131, 131);
     border-radius: 10px;
     transition: transform 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .card:hover {
@@ -37,11 +38,13 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: white;
+
 }
 
 .description {
     font-size: 0.9rem;
     color: white;
+
 }
 
 @media (max-width: 768px) {
