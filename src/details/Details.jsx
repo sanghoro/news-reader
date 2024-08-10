@@ -7,6 +7,9 @@ const Details = ({ articles }) => {
 
     return (
         <div className='details-page'>
+            <Link className="logo-link" to="/">
+                <h1 className='logo'>The Turing Times</h1>
+            </Link>
             <div className='details-container'>
                 <h2 className="detail-article-title">{article.title}</h2>
                 <img className="detail-article-image" src={article.urlToImage} alt={article.title} />

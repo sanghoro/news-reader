@@ -5,20 +5,29 @@
     align-items: center;
     padding: 20px;
     color: white;
-    background-color: black;
+    background-image: url('../Assets/paper.jpg');
+}
+
+.logo-link {
+    text-decoration: none;
+    color: black;
 }
 
 .search-section {
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 
 .search-bar {
     width: 20rem;
+    height: 2rem;
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
 }
 
 .logo {
     font-family: "UnifrakturCook", cursive;
-    font-size: 3rem;
+    font-size: 7rem;
+    font-weight: 100;
 }
 
 .article-container {
@@ -45,12 +54,14 @@
 
 .card:hover {
     transform: scale(1.03);
+    box-shadow: 0 7px 7px 7px rgba(255, 255, 255, 0.7);
 }
 
 .title {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: white;
+    font-family: "Space Mono", monospace;
 
 }
 
@@ -63,5 +74,9 @@
 @media (max-width: 750px) {
     .article-image {
         width: 100%;
+    }
+
+    .logo {
+        font-size: 3rem;
     }
 }
