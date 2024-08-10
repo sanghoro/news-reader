@@ -8,6 +8,14 @@
     background-color: black;
 }
 
+.search-section {
+    margin: 2rem;
+}
+
+.search-bar {
+    width: 20rem;
+}
+
 .logo {
     font-family: "UnifrakturCook", cursive;
     font-size: 3rem;
