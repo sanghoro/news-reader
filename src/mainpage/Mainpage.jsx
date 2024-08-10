@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "./Mainpage.css"
 
 const Mainpage = ({ articles }) => {
@@ -15,8 +15,9 @@ const Mainpage = ({ articles }) => {
 
     return (
         <div className="news-container">
-            <h1 className='logo'>The Turing Times</h1>
-
+            <Link className="logo-link" to="/">
+                <h1 className='logo'>The Turing Times</h1>
+            </Link>
             <div className='search-section'>
                 <input className="search-bar" type="search" placeholder="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
