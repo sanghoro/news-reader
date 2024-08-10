@@ -10,7 +10,10 @@ const Mainpage = ({ articles }) => {
 
     return (
         <div className="news-container">
-            <h1 className='logo'>News Reader</h1>
+            <h1 className='logo'>The Turing Times</h1>
+            <div>
+
+            </div>
             <div className="article-container">
                 {articles.map((article, index) => (
                     <div key={index} className="card" onClick={() => handleClick(index)}>
