@@ -6,6 +6,7 @@
     height: 100vh;
     background-color: #f8f8f8;
     text-align: center;
+    background-image: url('../Assets/paper.jpg');
 }
 
 .page-not-found-msg {
