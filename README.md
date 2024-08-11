@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+![Screenshot 2024-08-10 at 10 35 57 PM](https://github.com/user-attachments/assets/09494dca-3a19-413d-b3f2-0dd6e1af1d04)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Abstract
+"The Turing Times” project is a user friendly news-reader app built with React. It allows users to browse various news articles.
+The application features intuitive design, enabling users to effortlessly navigate through different categories- including all products, women's, men's jewelry and electronic sections.
+Users can search for specific news articles, and view detailed news information. 
+Additionally, the project includes robust error handling, in case of any errors.
+The project showcases modern web development practices, including the use of React hooks for state management, React Router for navigation, and Cypress for end-to-end testing. 
 
-In the project directory, you can run:
 
-### `npm start`
+## Preview
+![news-reader](https://github.com/user-attachments/assets/9c173d45-7b11-4753-8784-be917c5c8d10)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
+### Home Page
+![Screenshot 2024-08-10 at 10 45 34 PM](https://github.com/user-attachments/assets/e437da87-2ed8-4a57-b953-ce9c907b6a97)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Details
+![Screenshot 2024-08-10 at 10 45 45 PM](https://github.com/user-attachments/assets/15325b6e-15fe-454d-b8f1-d442534896ea)
 
-### `npm run build`
+### Wrong address
+![Screenshot 2024-08-10 at 10 46 00 PM](https://github.com/user-attachments/assets/e67ff858-2dde-4b7e-8de6-1dd8db194565)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Mobile View
+![Screenshot 2024-08-10 at 10 46 15 PM](https://github.com/user-attachments/assets/8be2d665-c5e7-481e-bfd8-2893e22c40cb)
+![Screenshot 2024-08-10 at 10 46 22 PM](https://github.com/user-attachments/assets/435ea4cf-d8e0-4d96-b3a9-399ac19e5de1)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation Instructions
+### To start the app
+- [ ]  Clone down the repository onto your local machine using `git clone https://github.com/sanghoro/news-reader`
+- [ ]  Once cloned down, cd into the direction and install dependencies by running `npm install`
+- [ ]  Run `npm start` then visit the local host to view the application in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### To test with Cypress
+- [ ]  Type `npm install cypress --save-dev` into your terminal
+- [ ]  Type `npm run cypress` in your terminal then visit the local host to view the application in your browser.
+- [ ]  Click E2E testing
+- [ ]  Click Start E2E Testing in Chrome
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Pre-Planning
+Used Github Project for Pre-planning. [here](https://github.com/users/sanghoro/projects/14)
 
-## Learn More
+## Learning Goals
+  * Use the knowledge learned from Mod3 to create a simple news-reading website
+  
+## Challenges
+  * Handling details page with each articles' id being all the same- had to give each articles index number. Then extract the index number as each articles' id to get into details page.
+  
+## Wins
+* Successfully completed MVPs in time (was given 8 hours)
+* Also implemented Cypress testing for e2e testing within the given amount of time
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributions
+[Seong Kang - LinkedIn](https://www.linkedin.com/in/seong-kang/)
