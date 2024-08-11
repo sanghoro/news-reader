@@ -12,7 +12,6 @@ const Mainpage = ({ articles }) => {
 
     const filteredArticles = articles.filter(article => article.title.toLowerCase().includes(searchTerm.toLowerCase()))
 
-
     return (
         <div className="news-container">
             <Link className="logo-link" to="/">
@@ -23,13 +22,18 @@ const Mainpage = ({ articles }) => {
             </div>
 
             <div className="article-container">
-                {filteredArticles.map((article, index) => (
-                    <div key={index} className="card" onClick={() => handleClick(index)}>
-                        <h2 className="title" >{article.title}</h2>
-                        <img src={article.urlToImage} className='article-image' />
-                        <p className="description">{article.description}</p>
-                    </div>
-                ))}
+                {filteredArticles.length > 0 ? (
+                    filteredArticles.map((article, index) => (
+                        <div key={index} className="card" onClick={() => handleClick(index)}>
+                            <h2 className="title" >{article.title}</h2>
+                            <img src={article.urlToImage} className='article-image' />
+                            <p className="description">{article.description}</p>
+                        </div>
+                    ))
+                ) : (
+                    <p className='no-result-msg'> No artlces found. Try different name. </p>
+                )
+                }
             </div>
         </div>
     );

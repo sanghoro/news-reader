@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Mainpage from './mainpage/Mainpage'
 import Details from './details/Details';
+import PageNotFound from './pageNotFound/PageNotFound';
 
 function App() {
   const [articles, setArticles] = useState([])
@@ -13,6 +14,8 @@ function App() {
     .then(data => {
       console.log(data.articles)
       setArticles(data.articles)
+    }).catch(err=>{
+      console.log(err)
     })
   }, [])
 
@@ -21,6 +24,7 @@ function App() {
     <Router>
         <Routes>
             <Route path="/" element={<Mainpage articles={articles} />} />
+            <Route path="*" element={<PageNotFound />} />
             <Route path="/details/:index" element={<Details articles={articles} />} />
         </Routes>
     </Router>

@@ -20,6 +20,11 @@ describe('should be able to see the homepage', () => {
     cy.get('.card').should('contain', 'Altera')
   })
 
+  it('should have sad path for search with not existing articles', () => {
+    cy.get('.search-bar').type('kok')
+    cy.get('.no-result-msg').should('exist')
+  })
+
   it('should be able to click an article and see the details', () => {
     cy.get('.article-container > :nth-child(1)').click()
     cy.get('.details-container').should('contain', "Altera")
@@ -34,6 +39,11 @@ describe('should be able to see the homepage', () => {
     cy.get('.details-container').should('contain', "Altera")
     cy.get('.home-button').click()
     cy.get('.card').should('have.length', 2)
+  })
+
+  it.only('should take to pageNotFound page when entered wrong address', ()=>{
+    cy.visit('http://localhost:3000/aaaaa')
+    cy.get('.page-not-found-msg').should('exist')
   })
 
 })
