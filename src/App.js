@@ -15,6 +15,7 @@ function App() {
       console.log(data.articles)
       setArticles(data.articles)
     })
+    .catch(err => console.log(err))
   }, [])
 
 
